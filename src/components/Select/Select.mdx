@@ -1,0 +1,63 @@
+import { Meta, Story, Canvas, Controls } from '@storybook/blocks';
+import * as SelectStories from './Select.stories';
+
+<Meta of={SelectStories} />
+
+# Select Component
+
+Select component allows users to choose multiple Pokémon from a dropdown list. It supports loading states, error handling, and limits the number of selections.
+
+## Features
+
+- 🔍 Search functionality
+- ✨ Multiple selection
+- ⚡ Loading state
+- ❌ Error handling
+- 🔢 Maximum items limit
+
+## Usage
+
+<Canvas>
+  <Story of={SelectStories.Default} />
+</Canvas>
+
+## Properties
+
+<Controls />
+
+## Examples
+
+### Default Select
+<Canvas>
+  <Story of={SelectStories.Default} />
+</Canvas>
+
+The default state of the Select component with a list of Pokémon to choose from.
+
+### Loading State
+<Canvas>
+  <Story of={SelectStories.Loading} />
+</Canvas>
+
+Displays a loading indicator while fetching the Pokémon list.
+
+### With Error
+<Canvas>
+  <Story of={SelectStories.WithError} />
+</Canvas>
+
+Shows how the Select component handles error states and displays error messages.
+
+## Accessibility
+
+- Fully keyboard navigable
+- Screen reader friendly
+- ARIA labels for better accessibility
+- Focus management for dropdown options
+
+## Best Practices
+
+- Use clear and concise placeholder text
+- Limit the number of selections when necessary
+- Provide meaningful error messages
+- Consider loading states for async data
